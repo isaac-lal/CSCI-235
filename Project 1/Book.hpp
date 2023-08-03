@@ -33,7 +33,7 @@ class Book {
       @param  : the title of the Book
       @post   : sets the Book's title to the value of the parameter
     */
-    void setTitle(const std::string & title_book);
+    void setTitle(const std::string &title_book);
 
     /**
       @return : the title of the Book
@@ -44,7 +44,7 @@ class Book {
       @param  : the name of the author of the Book
       @post   : sets the Book's author to the value of the parameter
     */
-    void setAuthor(const std::string & author);
+    void setAuthor(const std::string &author);
 
     /**
       @return : the author of the Book
@@ -56,7 +56,7 @@ class Book {
       @pre    : page count > 0 - books cannot have a negative number of pages
       @post   : sets the page count to the value of the parameter
     */
-    void setPageCount(const int & number_pages);
+    void setPageCount(const int &number_pages);
 
     /**
       @return : the page count

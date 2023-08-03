@@ -70,7 +70,7 @@ bool Book::isDigital() const {
   @param  : a reference to title of the Book
   @post   : sets the Book's title to the value of the parameter
 */
-void Book::setTitle(const std::string & title) {
+void Book::setTitle(const std::string &title) {
   title_ = title;
 }
 
@@ -78,7 +78,7 @@ void Book::setTitle(const std::string & title) {
   @param  : a reference to the name of the author of the Book
   @post   : sets the Book's author to the value of the parameter
 */
-void Book::setAuthor(const std::string & author) {
+void Book::setAuthor(const std::string &author) {
   author_ = author;
 }
 
@@ -87,7 +87,7 @@ void Book::setAuthor(const std::string & author) {
   @pre    : page count > 0 - books cannot have a negative number of pages
   @post   : sets the page count to the value of the parameter
 */
-void Book::setPageCount(const int & page_count) {
+void Book::setPageCount(const int &page_count) {
   if (page_count > 0) 
     page_count_ = page_count;
 }

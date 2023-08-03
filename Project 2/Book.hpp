@@ -56,20 +56,20 @@ class Book {
       @param  : a reference to title of the Book
       @post   : sets the Book's title to the value of the parameter
     */
-    void setTitle(const std::string & title);
+    void setTitle(const std::string &title);
 
     /**
       @param  : a reference to the name of the author of the Book
       @post   : sets the Book's author to the value of the parameter
     */
-    void setAuthor(const std::string & author);
+    void setAuthor(const std::string &author);
 
     /**
       @param  : a reference to a positive integer page count
       @pre    : page count > 0 - books cannot have a negative number of pages
       @post   : sets the page count to the value of the parameter
     */
-    void setPageCount(const int & page_count);
+    void setPageCount(const int &page_count);
 
     /**
      @post   : sets the digital flag to true

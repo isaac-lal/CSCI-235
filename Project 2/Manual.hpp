@@ -37,7 +37,7 @@ class Manual: public Book {
       @param  : a reference to a string representing the device
       @post   : sets the private member variable to the value of the parameter
     **/
-    void setDevice(const std::string & device_name);
+    void setDevice(const std::string &device_name);
 
     /**
       @return  : the variable indicating the device the manual is for
@@ -49,7 +49,7 @@ class Manual: public Book {
       @return  : has_website_ flag (a boolean)
       @post    : If the link is not correctly formatted, store "Broken Link" in the link member variable (see <regex>) and either way set the has website flag to True
     **/
-    bool setWebsite(const std::string & url);
+    bool setWebsite(const std::string &url);
 
     /**
     @return  : the url for the website
@@ -60,7 +60,7 @@ class Manual: public Book {
       @param  : a reference to boolean
       @post   : sets the private member variable indicating the presence of a visual aid to the value of the parameter
     **/
-    void setVisualAid(const bool & has_visual_aid);
+    void setVisualAid(const bool &has_visual_aid);
 
     /**
       @return  : the visual aid flag

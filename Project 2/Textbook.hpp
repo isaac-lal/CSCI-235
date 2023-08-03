@@ -46,7 +46,7 @@ class Textbook: public Book {
       @param  : a reference to a string representing the the subject of the book
       @post   : sets the private member variable to the value of the parameter
     **/
-    void setSubject(const std::string & subject);
+    void setSubject(const std::string &subject);
 
     /**
       @return  : the subject of the textbook
@@ -57,7 +57,7 @@ class Textbook: public Book {
       @param  : a reference to a grade_level
       @post   : sets the private member variable to the value of the parameter
     **/
-    void setGradeLevel(const grade_level & grade_lvl);
+    void setGradeLevel(const grade_level &grade_lvl);
 
     /**
       @return  : a string representative of the grade_level (e.g. if the grade level is JUNIOR_HIGH, it returns "JUNIOR HIGH")

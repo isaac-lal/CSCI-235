@@ -46,7 +46,7 @@ class Novel: public Book {
       @param  : a reference to string indicating the genre of the book
       @post   : sets genre_ private member to the value of the parameter
     **/
-    void setGenre(const std::string & genre);
+    void setGenre(const std::string &genre);
 
     /**
       @return   : the vector containing the list of characters for this novel
@@ -62,7 +62,7 @@ class Novel: public Book {
       @param  : a reference to string indicating a character
       @post   : inserts the character into the character_list_ vector
     **/
-    void addCharacter(const std::string & character);
+    void addCharacter(const std::string &character);
 
     /**
       @return   : the value of the film_adaptation_ private member
@@ -84,14 +84,14 @@ class Novel: public Book {
       @param    : a reference to string indicating the rating of the review
       @return   : creates and returns a review data type with score and rating as indicated by the parameters
     */
-    review createReview(const double & score,
-      const std::string & rating);
+    review createReview(const double &score,
+      const std::string &rating);
 
     /**
       @param  : a reference to review object
       @post   : inserts the review argument into the reviews_ vector
     **/
-    void addReview(const review & r);
+    void addReview(const review &r);
 
     /**
       @post   : retrieves all scores from the reviews_ vector and computes the average to set value of the average_rating_ private member

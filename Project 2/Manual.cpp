@@ -12,7 +12,7 @@ Date: February 21, 2023
   @post   : test to see if the url is in the right format
   @return : true if right format, false if wrong format
 **/
-bool checkFormat(const std::string & url) {
+bool checkFormat(const std::string &url) {
   //this is to check the ending of the url to be greater than 2
   std::string str = url.substr(url.find_last_of('.'));
 
@@ -65,7 +65,7 @@ Manual::Manual(std::string title, std::string author, int page_count, std::strin
   @param  : a reference to a string representing the device
   @post   : sets the private member variable to the value of the parameter
 **/
-void Manual::setDevice(const std::string & device_name) {
+void Manual::setDevice(const std::string &device_name) {
   device_name_ = device_name;
 }
 
@@ -81,7 +81,7 @@ std::string Manual::getDevice() const {
   @return  : has_website_ flag (a boolean)
   @post    : If the link is not correctly formatted, store "Broken Link" in the link member variable (see <regex>) and either way set the has website flag to True
 **/
-bool Manual::setWebsite(const std::string & url) {
+bool Manual::setWebsite(const std::string &url) {
   //check formating
   if (!checkFormat(url)) 
     url_ = "Broken Link";
@@ -104,7 +104,7 @@ std::string Manual::getWebsite() {
   @param  : a boolean
   @post   : sets the private member variable indicating the presence of a visual aid to the value of the parameter
 **/
-void Manual::setVisualAid(const bool & has_visual_aid) {
+void Manual::setVisualAid(const bool &has_visual_aid) {
   has_visual_aid_ = has_visual_aid;
 }
 
