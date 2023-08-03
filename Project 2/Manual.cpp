@@ -74,10 +74,8 @@ std::string Manual::getDevice() const {
 **/
 bool Manual::setWebsite(const std::string & url) {
   //check formating
-  if (!checkFormat(url))
-    url_ = "Broken Link";
-  else
-    url_ = url;
+  if (!checkFormat(url)) url_ = "Broken Link";
+  else url_ = url;
 
   is_website_ = true; //true reguardless
 
