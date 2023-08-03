@@ -1,3 +1,10 @@
+/*
+Isaac Lal
+isaac.lal46@myhunter.cuny.edu
+Tiziana Ligorio
+Project 3
+*/
+
 #include "LibraryRecord.hpp"
 #include "Book.hpp"
 #include <iostream>

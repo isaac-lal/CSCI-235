@@ -1,8 +1,8 @@
 /*
-Name: Isaac Lal
-Email: isaac.lal46@myhunter.cuny.edu
-Professor: Tiziana Ligorio
-Date: February 21, 2023
+Isaac Lal
+isaac.lal46@myhunter.cuny.edu
+Tiziana Ligorio
+Project 2
 */
 
 #ifndef TEXTBOOK_HPP_

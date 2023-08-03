@@ -1,9 +1,8 @@
 /*
-Sheridan Siguencia
-Sheridan.siguencia98@myhunter.cuny.edu
-
-ArrayBag interface for term project
-CSCI 235 Spring 2023
+Isaac Lal
+isaac.lal46@myhunter.cuny.edu
+Tiziana Ligorio
+Project 3
 */
 
 #ifndef ARRAY_BAG_

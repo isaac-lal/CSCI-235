@@ -1,10 +1,8 @@
 /*
-Sheridan Siguencia
-Sheridan.siguencia98@myhunter.cuny.edu
-
-
-creates a Book class with author, title, number of pages, 
-and determines if it is difital or not 
+Isaac Lal
+isaac.lal46@myhunter.cuny.edu
+Tiziana Ligorio
+Project 3
 */
 
 #ifndef BOOK_HPP_

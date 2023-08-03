@@ -1,16 +1,8 @@
 /*
-Sheridan Siguencia
-Sheridan.siguencia98@myhunter.cuny.edu
-
-In this Project 3 we will continue to build on Projects 1 and 2 to work with Templates 
-and ADTs.
-
-Using your knowledge of the ArrayBag you will develop a LibraryRecord ADT that will store 
-the Book data type you have been working on in the past projects. The LibraryRecord will 
-store Books much like an ArrayBag. In fact, LibraryRecord will be a subclass of ArrayBag 
-which specializes for storing Books.  Imagine you are engineering a system for librarians 
-and you will design the library system through which they access Book information.
-
+Isaac Lal
+isaac.lal46@myhunter.cuny.edu
+Tiziana Ligorio
+Project 3
 */
 
 #ifndef LIBRARY_RECORD_HPP_
