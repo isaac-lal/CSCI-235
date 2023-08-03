@@ -1,11 +1,3 @@
-/*
-Isaac Lal
-2/10/23
-
-This interface has a class named "Book" which represents the contents of a book such as the author, title, number of pages, and if it is digital. 
-Each of these contents are declared in its own private varibles with getters and setters functions. 
-*/
-
 #ifndef BOOK_HPP
 #define BOOK_HPP
 

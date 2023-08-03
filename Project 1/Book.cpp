@@ -1,11 +1,3 @@
-/*
-Isaac Lal
-2/10/23
-
-In this implementation for a class named "Book", it represents the contents of a book such as the author, title, number of pages, and if it is digital.
-Each of these contents are declared in its own private varibles with getters and setters functions. 
-*/
-
 #include "Book.hpp"
 
 /**
