@@ -1,6 +1,5 @@
 #include "Novel.hpp"
 
-
 /**
   Default constructor.
   Default-initializes all private members.
@@ -13,10 +12,8 @@ Novel::Novel(): Book() {};
   @param     : The author of the book (a string)
   @param     : The number of pages in the book (a positive integer)
   @param     : The genre of the novel (a string)
-  @param     : A flag indicating whether the book is in digital form
-                with DEFAULT VALUE False (a Boolean)
-  @param     : A flag indicating whether there is a film adaptation
-                for this novel with DEFAULT VALUE False (a Boolean)
+  @param     : A flag indicating whether the book is in digital form with DEFAULT VALUE False (a Boolean)
+  @param     : A flag indicating whether there is a film adaptation for this novel with DEFAULT VALUE False (a Boolean)
 */
 Novel::Novel(std::string title, std::string author, int page_count, std::string genre, bool is_digital, bool has_film):
   Book(title, author, page_count, is_digital), genre_ {
@@ -34,8 +31,7 @@ std::string Novel::getGenre() const {
 
 /**
   @param  : a reference to string indicating the genre of the book
-  @post   : sets genre_ private member to the
-              value of the parameter
+  @post   : sets genre_ private member to the value of the parameter
 **/
 void Novel::setGenre(const std::string & genre) {
   genre_ = genre;
@@ -49,10 +45,7 @@ std::vector < std::string > Novel::getCharacterList() const {
 }
 
 /**
-  @return    : a string of all the characters in the
-              character_list_ private member, concatenated
-              and separated by a space " " .
-              For example: "character1 character2 character3"
+  @return    : a string of all the characters in the character_list_ private member, concatenated and separated by a space " ". For example: "character1 character2 character3"
 **/
 std::string Novel::getCharacterListString() {
   std::string str = "";
@@ -86,11 +79,9 @@ void Novel::setFilmAdaptation() {
 }
 
 /**
-  @param    : a reference to floating point number (double) indicating
-              the score of the  review
+  @param    : a reference to floating point number (double) indicating the score of the review
   @param    : a reference to string indicating the rating of the review
-  @return   : creates and returns a review data type with
-              score and rating as indicated by the parameters
+  @return   : creates and returns a review data type with score and rating as indicated by the parameters
 */
 
 review Novel::createReview(const double & score,
@@ -111,9 +102,7 @@ void Novel::addReview(const review & r) {
 }
 
 /**
-  @post   : retrieves all scores from the reviews_ vector and
-            computes the average to set value of the average_rating_
-            private member
+  @post   : retrieves all scores from the reviews_ vector and computes the average to set value of the average_rating_ private member
 **/
 void Novel::calculateAverageRating() {
   average_rating_ = 0;
@@ -122,8 +111,8 @@ void Novel::calculateAverageRating() {
     average_rating_ += reviews_[i].score_;
 
   average_rating_ = average_rating_ / reviews_.size();
-
 }
+
 /**
   @return   : the value of the average rating private member
 **/

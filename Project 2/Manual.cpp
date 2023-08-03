@@ -12,9 +12,11 @@ bool checkFormat(const std::string & url) {
   int count = 0; //count represents the number of periods in the url
 
   // this is the loop counting the number of time '.' appears in the url since in every working wbesite url there are only two '.'
-  for (int i = 0; i = url.find('.', i) != std::string::npos; i++) count++;
+  for (int i = 0; i = url.find('.', i) != std::string::npos; i++) 
+    count++;
 
-  if (count != 2 || str.size() < 2 || (url.substr(0, 11) != "http://www." && url.substr(0, 12) != "https://www.")) return false;
+  if (count != 2 || str.size() < 2 || (url.substr(0, 11) != "http://www." && url.substr(0, 12) != "https://www.")) 
+    return false;
 
   //if all is good in the hood return true
   return true;
@@ -43,14 +45,14 @@ Manual::Manual(std::string title, std::string author, int page_count, std::strin
   }, has_visual_aid_ {
     has_visual_aid
   } {
-    if (!checkFormat(url)) {
-      url_ = "";
-      is_website_ = false;
-    } else {
-      url_ = url;
-      is_website_ = true;
-    }
+  if (!checkFormat(url)) {
+    url_ = "";
+    is_website_ = false;
+  } else {
+    url_ = url;
+    is_website_ = true;
   }
+}
 
 /**
   @param  : a reference to a string representing the device
@@ -74,8 +76,10 @@ std::string Manual::getDevice() const {
 **/
 bool Manual::setWebsite(const std::string & url) {
   //check formating
-  if (!checkFormat(url)) url_ = "Broken Link";
-  else url_ = url;
+  if (!checkFormat(url)) 
+    url_ = "Broken Link";
+  else 
+    url_ = url;
 
   is_website_ = true; //true reguardless
 

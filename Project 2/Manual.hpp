@@ -65,7 +65,8 @@ class Manual: public Book {
     **/
     bool hasWebsite() const;
 
-    private: std::string url_; //a string that represents a url
+  private: 
+    std::string url_; //a string that represents a url
     std::string device_name_; //a string that represents the name of the device
     bool has_visual_aid_; //a boolean indicating whether the Manual has a visual aid
     bool is_website_; //a boolean indicating whether the Manual has a website
