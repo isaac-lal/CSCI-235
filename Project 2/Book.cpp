@@ -81,7 +81,8 @@ void Book::setAuthor(const std::string & author) {
   @post   : sets the page count to the value of the parameter
 */
 void Book::setPageCount(const int & page_count) {
-  if (page_count > 0) page_count_ = page_count;
+  if (page_count > 0) 
+    page_count_ = page_count;
 }
 
 /**
