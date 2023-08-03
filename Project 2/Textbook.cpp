@@ -37,7 +37,7 @@ Textbook::Textbook(std::string title, std::string author, int page_count, std::s
   @param  : a reference to a string representing the the subject of the book
   @post   : sets the private member variable to the value of the parameter
 **/
-void Textbook::setSubject(const std::string &subject) {
+void Textbook::setSubject(const std::string & subject) {
   subject_ = subject;
 }
 
@@ -52,7 +52,7 @@ std::string Textbook::getSubject() const {
   @param  : a reference to a grade_level
   @post   : sets the private member variable to the value of the parameter
 **/
-void Textbook::setGradeLevel(const grade_level &grade_lvl) {
+void Textbook::setGradeLevel(const grade_level & grade_lvl) {
   grade_lvl_ = grade_lvl;
 }
 

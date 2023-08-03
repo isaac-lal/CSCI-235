@@ -37,7 +37,7 @@ Book::Book(std::string title_book, std::string author, int number_pages, bool di
   @param  : the title of the Book
   @post   : sets the Book's title to the value of the parameter
 */
-void Book::setTitle(const std::string &title_book) {
+void Book::setTitle(const std::string & title_book) {
   title_book_ = title_book;
 }
 
@@ -52,7 +52,7 @@ std::string Book::getTitle() const {
   @param  : the name of the author of the Book
   @post   : sets the Book's author to the value of the parameter
 */
-void Book::setAuthor(const std::string &author) {
+void Book::setAuthor(const std::string & author) {
   author_ = author;
 }
 
@@ -68,8 +68,8 @@ std::string Book::getAuthor() const {
   @pre    : page count > 0 - books cannot have a negative number of pages
   @post   : sets the page count to the value of the parameter
 */
-void Book::setPageCount(const int &number_pages) {
-  if (number_pages > 0) 
+void Book::setPageCount(const int & number_pages) {
+  if (number_pages > 0)
     number_pages_ = number_pages;
 }
 

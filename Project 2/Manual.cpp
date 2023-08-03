@@ -12,17 +12,17 @@ Date: February 21, 2023
   @post   : test to see if the url is in the right format
   @return : true if right format, false if wrong format
 **/
-bool checkFormat(const std::string &url) {
+bool checkFormat(const std::string & url) {
   //this is to check the ending of the url to be greater than 2
   std::string str = url.substr(url.find_last_of('.'));
 
   int count = 0; //count represents the number of periods in the url
 
   // this is the loop counting the number of time '.' appears in the url since in every working wbesite url there are only two '.'
-  for (int i = 0; i = url.find('.', i) != std::string::npos; i++) 
+  for (int i = 0; i = url.find('.', i) != std::string::npos; i++)
     count++;
 
-  if (count != 2 || str.size() < 2 || (url.substr(0, 11) != "http://www." && url.substr(0, 12) != "https://www.")) 
+  if (count != 2 || str.size() < 2 || (url.substr(0, 11) != "http://www." && url.substr(0, 12) != "https://www."))
     return false;
 
   //if all is good in the hood return true
@@ -52,20 +52,20 @@ Manual::Manual(std::string title, std::string author, int page_count, std::strin
   }, has_visual_aid_ {
     has_visual_aid
   } {
-  if (!checkFormat(url)) {
-    url_ = "";
-    is_website_ = false;
-  } else {
-    url_ = url;
-    is_website_ = true;
+    if (!checkFormat(url)) {
+      url_ = "";
+      is_website_ = false;
+    } else {
+      url_ = url;
+      is_website_ = true;
+    }
   }
-}
 
 /**
   @param  : a reference to a string representing the device
   @post   : sets the private member variable to the value of the parameter
 **/
-void Manual::setDevice(const std::string &device_name) {
+void Manual::setDevice(const std::string & device_name) {
   device_name_ = device_name;
 }
 
@@ -81,11 +81,11 @@ std::string Manual::getDevice() const {
   @return  : has_website_ flag (a boolean)
   @post    : If the link is not correctly formatted, store "Broken Link" in the link member variable (see <regex>) and either way set the has website flag to True
 **/
-bool Manual::setWebsite(const std::string &url) {
+bool Manual::setWebsite(const std::string & url) {
   //check formating
-  if (!checkFormat(url)) 
+  if (!checkFormat(url))
     url_ = "Broken Link";
-  else 
+  else
     url_ = url;
 
   is_website_ = true; //true reguardless
@@ -104,7 +104,7 @@ std::string Manual::getWebsite() {
   @param  : a boolean
   @post   : sets the private member variable indicating the presence of a visual aid to the value of the parameter
 **/
-void Manual::setVisualAid(const bool &has_visual_aid) {
+void Manual::setVisualAid(const bool & has_visual_aid) {
   has_visual_aid_ = has_visual_aid;
 }
 

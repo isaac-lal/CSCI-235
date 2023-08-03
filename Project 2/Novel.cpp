@@ -40,7 +40,7 @@ std::string Novel::getGenre() const {
   @param  : a reference to string indicating the genre of the book
   @post   : sets genre_ private member to the value of the parameter
 **/
-void Novel::setGenre(const std::string &genre) {
+void Novel::setGenre(const std::string & genre) {
   genre_ = genre;
 }
 
@@ -67,7 +67,7 @@ std::string Novel::getCharacterListString() {
   @param  : a reference to string indicating a character
   @post   : inserts the character into the character_list_ vector
 **/
-void Novel::addCharacter(const std::string &character) {
+void Novel::addCharacter(const std::string & character) {
   character_list_.push_back(character);
 }
 
@@ -92,7 +92,7 @@ void Novel::setFilmAdaptation() {
 */
 
 review Novel::createReview(const double & score,
-  const std::string &rating) {
+  const std::string & rating) {
   struct review rev;
   rev.rating_ = rating;
   rev.score_ = score;
@@ -104,7 +104,7 @@ review Novel::createReview(const double & score,
   @param  : a reference to review object
   @post   : inserts the review argument into the reviews_ vector
 **/
-void Novel::addReview(const review &r) {
+void Novel::addReview(const review & r) {
   reviews_.push_back(r);
 }
 

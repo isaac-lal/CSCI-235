@@ -6,8 +6,11 @@ Date: February 21, 2023
 */
 
 #include "Book.hpp"
+
 #include "Manual.hpp"
+
 #include "Textbook.hpp"
+
 #include "Novel.hpp"
 
 #include <iostream>
