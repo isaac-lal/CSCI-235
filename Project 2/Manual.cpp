@@ -1,3 +1,10 @@
+/*
+Name: Isaac Lal
+Email: isaac.lal46@myhunter.cuny.edu
+Professor: Tiziana Ligorio
+Date: February 21, 2023
+*/
+
 #include "Manual.hpp"
 
 /**

@@ -1,3 +1,10 @@
+/*
+Name: Isaac Lal
+Email: isaac.lal46@myhunter.cuny.edu
+Professor: Tiziana Ligorio
+Date: February 21, 2023
+*/
+
 #ifndef TEXTBOOK_HPP_
 #define TEXTBOOK_HPP_
 
