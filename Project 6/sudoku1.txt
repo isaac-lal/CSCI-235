@@ -1,0 +1,187 @@
+/*
+Isaac Lal
+isaac.lal46@myhunter.cuny.edu
+Tiziana Ligorio
+Project 6
+*/
+
+#ifndef SUDOKU_SOLVER_HPP_
+#define SUDOKU_SOLVER_HPP_
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <sstream>
+ 
+
+//We define Location within the Sudoku namespace.
+//To use Location, you must specify the namespace Sudoku::Location
+//Just like you do when using the standard namespace std::
+namespace Sudoku
+{  
+  struct Location
+  {
+    int row;
+    int col;
+  };
+}
+
+class SudokuSolver
+{
+public: 
+  SudokuSolver();
+  
+  SudokuSolver(std::string input_file_name);
+ 
+  void print();
+  //Add your public members here
+
+  /**
+  @post: solves recursively
+  */
+  bool solveSudoku();
+
+
+  /**
+  @post:  returns true if the value parameter (which can take on values 1-9) can 
+  legally be placed at the given location in the 2D array without breaking the rules of sudoku. 
+  It returns false if placing value at location is not a legal move.
+  */
+  Sudoku::Location returnNextEmpty();
+
+
+  bool checkLegalValue(int value, Sudoku::Location location);
+
+
+  bool subBoxesCheck(int value, int rNum, int cNum);
+
+  /**
+  @post: returns true if the puzzle is solvable, false otherwise. 
+  */
+  bool isPuzzleSolvable(); 
+  // We suggest you keep track of this when solving the problem at construction, 
+  //rather than solving the puzzle again each time this function is called
+
+  /**
+  @post: records boolean if the puzzle as being solvable true otherwise false
+  */
+  bool setSolvable();
+
+
+  /**
+  @post: returns the  2D pointer array representing the puzzle
+  */
+  int** getPuzzleNumbers(); 
+
+
+  /**
+  @post: if the board is legally filled return true otherwise false
+  */
+  bool isSolved();
+
+
+  /**
+  @post: sets the  2D pointer array representing the puzzle to the value of the parameter
+  */
+  void setPuzzleNumber(int value, Sudoku::Location l); 
+
+
+private:
+//Add your private members here
+  int** board_; //board   
+
+  bool solvablilty_ = false;
+
+  bool solved_ = false;
+
+};
+
+#endif
+
+#ifndef SUDOKU_SOLVER_HPP_
+#define SUDOKU_SOLVER_HPP_
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <sstream> 
+ 
+
+//We define Location within the Sudoku namespace.
+//To use Location, you must specify the namespace Sudoku::Location
+//Just like you do when using the standard namespace std::
+namespace Sudoku
+{  
+  struct Location
+  {
+    int row;
+    int col;
+  };
+}
+
+class SudokuSolver
+{
+public: 
+  SudokuSolver();
+  
+  SudokuSolver(std::string input_file_name);
+ 
+  void print();
+  //Add your public members here
+
+  /**
+  @post: solves recursively
+  */
+  bool solveSudoku();
+
+
+  /**
+  @post:  returns true if the value parameter (which can take on values 1-9) can 
+  legally be placed at the given location in the 2D array without breaking the rules of sudoku. 
+  It returns false if placing value at location is not a legal move.
+  */
+  Sudoku::Location returnNextEmpty();
+
+
+  bool checkLegalValue(int value, Sudoku::Location location);
+
+
+  bool subBoxesCheck(int value, int rNum, int cNum);
+
+  /**
+  @post: returns true if the puzzle is solvable, false otherwise. 
+  */
+  bool isPuzzleSolvable(); 
+  // We suggest you keep track of this when solving the problem at construction, 
+  //rather than solving the puzzle again each time this function is called
+
+  /**
+  @post: records boolean if the puzzle as being solvable true otherwise false
+  */
+  void setSolvable();
+
+
+  /**
+  @post: returns the  2D pointer array representing the puzzle
+  */
+  int** getPuzzleNumbers(); 
+
+
+  /**
+  @post: sets the  2D pointer array representing the puzzle to the value of the parameter
+  */
+  void setPuzzleNumbers(int value, Sudoku::Location l); 
+
+
+private:
+//Add your private members here
+  int** board_; //board   
+
+
+  bool solved_;
+
+};
+
+#endif
