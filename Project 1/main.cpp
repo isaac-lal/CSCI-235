@@ -1,11 +1,12 @@
 #include "Book.hpp"
+
 #include <iostream>
 
 int main() {
   std::cout << "TEST 1: TEST DEFAULT CONSTRUCTOR & ACCESSORS" << std::endl;
 
   // Test default constructor
-  Book my_book; 
+  Book my_book;
 
   // Test accessor functions
   std::cout << my_book.getTitle() << std::endl;

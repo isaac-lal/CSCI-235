@@ -13,8 +13,8 @@ Each of these contents are declared in its own private varibles with getters and
   Default-initializes all private members. Booleans are default-initialized to False.
 */
 Book::Book() {
-  title_book_ = ""; 
-  author_ = ""; 
+  title_book_ = "";
+  author_ = "";
   number_pages_ = 0;
   digital_ = false;
 }
@@ -27,19 +27,19 @@ Book::Book() {
   @param     : A flag indicating whether the book is in digital form (a Boolean), with default value False
   @post      : The private members are set to the values of the corresponding parameters.
 */
-Book::Book(std::string title_book, std::string author, int number_pages, bool digital) {  
+Book::Book(std::string title_book, std::string author, int number_pages, bool digital) {
   title_book_ = title_book;
-  author_ = author; 
-  number_pages_ = number_pages; 
-  digital_ = digital;    
+  author_ = author;
+  number_pages_ = number_pages;
+  digital_ = digital;
 }
 
 /**
   @param  : the title of the Book
   @post   : sets the Book's title to the value of the parameter
 */
-void Book::setTitle(const std::string &title_book) {
-  title_book_ = title_book;   
+void Book::setTitle(const std::string & title_book) {
+  title_book_ = title_book;
 }
 
 /**
@@ -53,14 +53,14 @@ std::string Book::getTitle() const {
   @param  : the name of the author of the Book
   @post   : sets the Book's author to the value of the parameter
 */
-void Book::setAuthor(const std::string &author) {
-  author_ = author; 
-}    
+void Book::setAuthor(const std::string & author) {
+  author_ = author;
+}
 
 /**
    @return : the author of the Book
 */
-std::string Book::getAuthor() const {   
+std::string Book::getAuthor() const {
   return author_;
 }
 
@@ -69,14 +69,14 @@ std::string Book::getAuthor() const {
   @pre    : page count > 0 - books cannot have a negative number of pages
   @post   : sets the page count to the value of the parameter
 */
-void Book::setPageCount(const int &number_pages) {   
-  if (number_pages > 0) number_pages_ = number_pages; 
+void Book::setPageCount(const int & number_pages) {
+  if (number_pages > 0) number_pages_ = number_pages;
 }
 
 /**
    @return : the page count
 */
-int Book::getPageCount() const {   
+int Book::getPageCount() const {
   return number_pages_;
 }
 
